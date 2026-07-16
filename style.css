@@ -12,6 +12,11 @@ h1, h2, h3, h4, h5, h6, span {
   line-height: 1.5;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
 p {
   line-height: 1.5;
   font-size: 16px;  
@@ -19,6 +24,24 @@ p {
 
 li {
   list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.row {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text--hotpink {
+  color: #cb1895;
 }
 
 /* NAVIGATION */
@@ -63,3 +86,67 @@ nav {
   font-weight: bold;
 }
 
+/* ABOUT ME */
+
+#about-me {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__info--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-me__picture--mask {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px rgba(3, 0, 0, .5);
+
+}
+
+.about-me__picture {
+  width: 100%;
+  transform: scale(1.5);
+  padding-top: 16px;
+ 
+}
+
+.about-me__info--title {
+  margin-bottom: 8px;
+  margin-top: 28px;
+}
+
+.about-me__info--para {
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.about-me__link {
+  font-size: 20px;
+  color:#242424;
+  text-decoration: none;
+  padding: 0px 16px;
+}
+
+.about-me__img--container {
+ flex: 1;
+ display: flex;
+ align-items: center;
+ }
+
+.about-me__img {
+ width: 100%;
+}
