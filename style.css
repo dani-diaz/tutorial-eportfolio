@@ -133,13 +133,14 @@ nav {
   font-weight: bold;
 }
 
+
 /* ABOUT ME */
 
 #about-me {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+ }
 
 .about-me__info {
   display: flex;
@@ -153,6 +154,7 @@ nav {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  margin-top: 50px;
 }
 
 .about-me__picture--mask {
@@ -437,4 +439,74 @@ footer {
 .footer__anchor:hover .footer__logo--popper {
   transform: translateX(60px);
   opacity: 1;
+}
+
+
+/* SMALL PHONES, TABLETS AND LARGE PHONES */
+
+
+@media (max-width: 768px) {
+  nav {
+    height: 68px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .about-me__info--para {
+    font-size: 18px;
+  }
+
+  .language {
+    width: calc(100% / 3);
+  }
+
+  .project__description--para {
+    font-size: 14px;
+  }
+
+  .project__description {
+    left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* SMALL PHONES */
+
+
+@media (max-width: 480px) {
+  .nav__link:not(:last-child) {
+    display: none;
+  }
+
+  .project__wrapper {
+    border-radius: 0;
+  }
+
+  .project__description {
+    padding: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .project__description--para {
+    display: none;
+  }
+
+  .project__description--links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project__description--title {
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .project__description--sub-title {
+    text-align: center;
+    margin: 12px 0;
+  }
 }
